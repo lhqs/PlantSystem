@@ -10,43 +10,5 @@
 		<property name="minPoolSize">2</property>
 		<property name="maxPoolSize">8</property>
 	</default-config>
-	<named-config name="readOnly">
-		<property name="driverClass">com.mysql.jdbc.Driver</property>
-    	<property name="jdbcUrl">jdbc:mysql://192.168.163.128:3306/admin_list</property>
-    	<property name="user">root</property>
-    	<property name="password">root</property>
-	    <property name="initialPoolSize">10</property>
-	    <property name="minPoolSize">10</property>
-	    <property name="maxPoolSize">60</property>
-	    <property name="maxIdleTime">60</property>
-	    <property name="acquireRetryAttempts">30</property>
-        <property name="acquireRetryDelay">100</property>
-        <property name="breakAfterAcquireFailure">false</property>
-  </named-config>
-</c3p0-config>
 
-<!-- <c3p0-config>
-	<default-config>
-		<property name="jdbcUrl">jdbc:mysql://47.94.192.2:3306/param_data</property>
-		<property name="driverClass">com.mysql.jdbc.Driver</property>
-		<property name="user">root</property>
-		<property name="password">root</property>
-		<property name="acquireIncrement">3</property>
-		<property name="initialPoolSize">5</property>
-		<property name="minPoolSize">2</property>
-		<property name="maxPoolSize">8</property>
-	</default-config>
-	<named-config name="readOnly">
-		<property name="driverClass">com.mysql.jdbc.Driver</property>
-    	<property name="jdbcUrl">jdbc:mysql://47.94.192.2:3306/admin_list</property>
-    	<property name="user">root</property>
-    	<property name="password">root</property>
-	    <property name="initialPoolSize">10</property>
-	    <property name="minPoolSize">10</property>
-	    <property name="maxPoolSize">60</property>
-	    <property name="maxIdleTime">60</property>
-	    <property name="acquireRetryAttempts">30</property>
-        <property name="acquireRetryDelay">100</property>
-        <property name="breakAfterAcquireFailure">false</property>
-  </named-config>
-</c3p0-config> -->
+</c3p0-config>
