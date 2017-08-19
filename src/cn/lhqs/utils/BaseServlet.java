@@ -1,12 +1,15 @@
 package cn.lhqs.utils;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.lang.reflect.Method;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.alibaba.fastjson.JSON;
 
 /**
  * BaseServlet用来作为其它Servlet的父类
@@ -57,5 +60,23 @@ public class BaseServlet extends HttpServlet {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
+	}
+	
+	/**
+	 * 将对象转换成JSON字符串，并响应回前台
+	 */
+	public void writeJson(Object object,HttpServletRequest request, HttpServletResponse response) {
+		String json = JSON.toJSONString(object);
+		try {
+			response.setContentType("text/html;charset=UTF-8");
+			PrintWriter pw = response.getWriter();
+			pw.write(json);
+			pw.flush();
+			pw.close();
+		} catch (IOException e) {
+//			logger.info("jsons数据响应前台是发生异常："+e);
+			e.printStackTrace();
+		}
+		
 	}
 }

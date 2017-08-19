@@ -10,7 +10,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import cn.lhqs.bean.Admin;
-import cn.lhqs.service.AdminService;
+import cn.lhqs.serviceImpl.AdminService;
 import cn.lhqs.utils.BaseServlet;
 import cn.lhqs.utils.CommonUtil;
 
