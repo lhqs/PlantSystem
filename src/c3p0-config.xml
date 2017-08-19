@@ -11,4 +11,6 @@
 		<property name="maxPoolSize">8</property>
 	</default-config>
 
+
 </c3p0-config>
+
