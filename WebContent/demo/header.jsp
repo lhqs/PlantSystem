@@ -68,7 +68,7 @@ div {
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="temp-test-save">
+          <input type="text" class="form-control" placeholder="">
         </div>
         <!-- <button type="submit" class="btn btn-default">Submit</button> -->
       </form>
@@ -83,6 +83,14 @@ div {
 				</c:otherwise>
 		    </c:choose>
           </span></a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">移动端应用下载<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://lhqs1314.cn/app/plant-android.apk">Andriod版本</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://lhqs1314.cn/app/plant-ios.ipa">iOS版本</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">选项设置<span class="caret"></span></a>
           <ul class="dropdown-menu">
